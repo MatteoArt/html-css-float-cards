@@ -1,3 +1,8 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +22,7 @@ header #title {
     color: #E53170;
 }
 main {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
 }
@@ -26,8 +31,34 @@ main #par {
     margin-bottom: 30px;
 }
 .card {
-    width: 33%;
+    box-sizing: content-box;
+    background-color: #0F0E17;
+    border: 10px solid white;
 }
+.img-card {
+    width: 120px;
+}
+.caption-contain {
+    margin: 20px 40px 20px 15px;
+}
+.name {
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 10px;
+}
+.caption {
+    display: inline-block;
+    color: white;
+    padding-bottom: 10px;
+}
+.card-mail {
+    display: block;
+    color: #3EB7EC;
+}
+/* classi per il float */
 .f-left {
-
+    float: left;
+}
+.f-right {
+    float: right;
 }
